@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "329789399831",
+    "firebase_url": "https://heeeeeeeelper-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "heeeeeeeelper",
+    "storage_bucket": "heeeeeeeelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329789399831:android:7f32052d0cc71f14014d52",
+        "android_client_info": {
+          "package_name": "com.example.heeeeeeelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329789399831-89li8gr5o0tio5qv11gbhhrr7nqt3gng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLkp9dIe2WQx3PnFkI3YQbPgJ9vDYyVm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329789399831-89li8gr5o0tio5qv11gbhhrr7nqt3gng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

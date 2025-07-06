@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Анкетирование"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Параноидальное расстройство личности характеризуется первазивной моделью необоснованного недоверия и подозрительности к другим, что включает в себя интерпретацию их мотивов как вредоносных. Лечение предполагает когнитивно-поведенческую терапию. \n"
+                android:textSize="15sp"
+                style="@style/stil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/stil"
+                android:text="Шизоидное расстройство личности характеризуется всепроникающей картиной отрешенности и общей незаинтересованностью в социальных отношениях, а также ограниченным диапазоном эмоций при межличностных взаимодействиях. Главный метод лечения — индивидуальная психотерапия в сочетании с общеукрепляющими и расслабляющими процедурами. \n"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/stil"
+                android:text="Гистрионное расстройство личности – расстройство личности, характеризующееся неутолимым желанием быть в центре внимания, склонностью к драматизации, театральностью поведения, экстравагантностью. Лечение этой патологии, прежде всего, происходит методами психотерапии. Наиболее часто используемые направления это: психоанализ, когнитивная, психодинамическая и групповая психотерапия. \n"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Астеническое расстройство личности – болезненное состояние, проявляющееся повышенной утомляемостью с крайней неустойчивостью настроения, ослаблением самообладания, нетерпеливостью. Лечение должно быть комплексным и строго индивидуальным. Органическое эмоционально лабильное астеническое расстройство лечат медикаментозными и немедикаментозными методами. \n"
+                style="@style/stil"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/stil"
+                android:text="Возбудимое расстройство личности – это глубокое нарушение характерологической конституции, ведущими симптомами которого являются крайняя эмоциональная нестабильность в сочетании со склонностью к импульсивным действиям без учета их последствий. В качестве примеров лечения можно привести диалектическую поведенческую терапию, терапию на основе ментализации и схема-терапию. Для лечения также могут применяться лекарства. \n"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать анкетирование"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+</androidx.constraintlayout.widget.ConstraintLayout>

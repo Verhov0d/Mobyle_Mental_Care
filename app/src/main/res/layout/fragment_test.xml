@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".test">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Что случилось с вами за день?"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cht1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Меня посещали благие мысли"
+                android:textSize="18dp"
+                style="@style/stil"/>
+
+            <CheckBox
+                android:id="@+id/cht2"
+                style="@style/stil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было ощущение, что все вокруг пренебрежительно ко мне относятся"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Мне кажется, что я мог выполнить больше дел"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Мне кажется, что меня пытались вывести из себя"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я хотел побыть один"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="День не вызвал никаких эмоций"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я много витал в облаках"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht7"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я хотел получить больше внимания, чем получил на самом деле"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="День вызвал тонну разнообразных эмоций"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht9"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня снова не получилось избежать знакомых мне проблем"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht10"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Сегодня я испытывал усталость"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht11"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Меня всё раздражало"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht12"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я был забывчивым, рассеяным весь день"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht13"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Меня всё бесило"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht14"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Мне сложно было себя контролировать"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht15"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я хотел получить больше удовольствий"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht16"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я был полон энергии"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht17"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было ощущение, что всё хорошо"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="День вызвал кучу положительных эмоций"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht19"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня не было суицидальных мыслей"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht20"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было ощущение, что мне есть на кого положиться"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht21"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было безмятежное настроение"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht22"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Я был полон оптимизма"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht23"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было ощущение, что я поймал удачу за хвост"
+                android:textSize="18dp" />
+
+            <CheckBox
+                style="@style/stil"
+                android:id="@+id/cht25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cht24"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="У меня было чувство эйфории"
+                android:textSize="18dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_marginBottom="7dp"
+        android:id="@+id/tobad"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.07"
+        android:autoSizeTextType="uniform"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

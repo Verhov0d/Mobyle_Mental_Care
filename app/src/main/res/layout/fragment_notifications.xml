@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Диаграммы"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/bra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Диаграмма за всё время"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaScha"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#5D8A86">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="1" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaPar"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#3F51B5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="2" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaShiz"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FFEB3B">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="3" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaIster"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#E91E63">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="4" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaZavis"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#8BC34A">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="5" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaAgr"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#9C27B0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="6" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Диаграмма за прошлое анкетирование"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaScha2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#5D8A86">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="1" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaPar2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#3F51B5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="2" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaShiz2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#FFEB3B">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="3" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaIster2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#E91E63">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="4" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaZavis2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#8BC34A">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="5" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/palkaAgr2"
+                    style="@style/stilDi"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#9C27B0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="6" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 - Проблем нет \n 2 - Паранойальность \n 3 - Шизоидность \n 4 - Истерия \n 5 - Астения \n 6 - Эмоциональная неустойчивость"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bra" />
+
+    <Button
+        android:id="@+id/tostory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:text="История"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintWidth_percent="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
